@@ -22,12 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MemoActivity"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".DiaryActivity"
-            tools:ignore="Instantiatable" />
-        <activity android:name=".CalendarActivity"
-            tools:ignore="Instantiatable" />
+        <activity android:name=".MemoActivity" />
+        <activity android:name=".DiaryActivity" />
+        <activity android:name=".CalendarActivity"/>
     </application>
 
 </manifest>
