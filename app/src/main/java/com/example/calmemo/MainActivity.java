@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.item1, R.id.item2, R.id.item3, R.id.item4).build();
 
-        calendarView.setOnClickListener(new View.OnClickListener() {
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
-            public void onClick(View view) {
+            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 PopupMenu popup = new PopupMenu(getApplicationContext(), view);
                 getMenuInflater().inflate(R.menu.option_menu, popup.getMenu());
 
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         return false;
                     }
                 });
+                popup.show();
             }
         });
     }
