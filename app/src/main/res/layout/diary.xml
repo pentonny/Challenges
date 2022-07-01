@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:ems="10"
-                android:hint="제목을 입력하세요.11111"/>
+                android:hint="제목을 입력하세요."/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
